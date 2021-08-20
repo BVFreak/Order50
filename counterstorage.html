@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = " " + localStorage.clickcount + " ";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+}
+</script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Click!</button></p>
+<div id="result"></div>
+
+<p> (Your click count will save locally) </p>
+<p> 0 Clicks - Noob </p>
+<p> 10 Clicks - Beginner </p>
+<p> 50 Clicks - Starter </p>
+<p> 100 Clicks - Average </p>
+<p> 200 Clicks - Intermediate </p>
+<p> 300 Clicks - Experienced </p>
+<p> 400 Clicks - Good </p>
+<p> 500 Clicks - Advanced </p>
+<p> 600 Clicks - Skilled </p>
+<p> 700 Clicks - Pro </p>
+<p> 800 Clciks - Exceptional </p>
+<p> 1000 Clicks - Expert </p>
+<p> 1500 Clicks - Master </p>
+<p> 2000 Clicks - NYAN CAT </p>
+<p> 3000 Clicks - Legendary </p>
+<p> 10 000 Clicks - Impossible </p>
+</body>
+</html>
