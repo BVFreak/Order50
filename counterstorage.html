@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <script>
@@ -8,9 +9,10 @@ function clickCounter() {
     } else {
       localStorage.clickcount = 1;
     }
-    document.getElementById("result").innerHTML = " " + localStorage.clickcount + " ";
+    document.getElementById("result").innerHTML = "" + localStorage.clickcount + "";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
 }
 </script>
 </head>
@@ -19,22 +21,41 @@ function clickCounter() {
 <p><button onclick="clickCounter()" type="button">Click!</button></p>
 <div id="result"></div>
 
-<p> (Your click count will save locally) </p>
-<p> 0 Clicks - Noob </p>
-<p> 10 Clicks - Beginner </p>
-<p> 50 Clicks - Starter </p>
-<p> 100 Clicks - Average </p>
-<p> 200 Clicks - Intermediate </p>
-<p> 300 Clicks - Experienced </p>
-<p> 400 Clicks - Good </p>
-<p> 500 Clicks - Advanced </p>
-<p> 600 Clicks - Skilled </p>
-<p> 700 Clicks - Pro </p>
-<p> 800 Clciks - Exceptional </p>
-<p> 1000 Clicks - Expert </p>
-<p> 1500 Clicks - Master </p>
-<p> 2000 Clicks - NYAN CAT </p>
-<p> 3000 Clicks - Legendary </p>
-<p> 10 000 Clicks - Impossible </p>
+<font face="Arial" size="1px" color="#000000"> (Your click count will save automaticaly) </font>
+<br>
+<br>
+<br>
+<h8> 0 Clicks - Noob </h8>
+<br>
+<h8> 10 Clicks - Beginner </h8>
+<br>
+<h8> 50 Clicks - Starter </h8>
+<br>
+<h8> 100 Clicks - Average </h8>
+<br>
+<h8> 200 Clicks - Intermediate </h8>
+<br>
+<h8> 300 Clicks - Experienced </h8>
+<br>
+<h8> 400 Clicks - Good </h8>
+<br>
+<h8> 500 Clicks - Advanced </h8>
+<br>
+<h8> 600 Clicks - Skilled </h8>
+<br>
+<h8> 700 Clicks - Pro </h8>
+<br>
+<h8> 800 Clciks - Exceptional </h8>
+<br>
+<h8> 1000 Clicks - Expert </h8>
+<br>
+<h8> 1500 Clicks - Master </h8>
+<br>
+<h8> 2000 Clicks - </h8><font face="Arial" size="2px" color="#FF000">=</font><font face="Arial" size="2px" color="#FFA500">=</font><font face="Arial" size="2px" color="#FFFF00">=</font><font face="Arial" size="2px" color="#00FF00">=</font><font face="Arial" size="2px" color="#000FFF">=</font><font face="Arial" size="2px" color="#800080">=</font><font face="Arial" size="2px" color="#FF69B4">NYAN CAT</font>
+<br>
+<h8> 3000 Clicks - Legendary </h8>
+<br>
+<h8> 10 000 Clicks - Impossible </h8>
+<br>
 </body>
 </html>
